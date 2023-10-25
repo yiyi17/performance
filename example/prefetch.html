@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="prefetch" src="xx.js">
+</head>
+<body>
+  <script>
+    // 在JavaScript中动态创建<link>标签来实现
+    var link = document.createElement('link')
+    link.type = 'text/javascript'
+    link.src = 'xx.js'
+    link.rel = 'prefetch'
+    document.head.appendChild(link)
+  </script>
+</body>
+</html>
