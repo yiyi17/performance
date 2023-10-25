@@ -4,19 +4,7 @@
 - 有哪些技术优化方案？
 
 ## 页面体验指标
-
-### 常用指标
-- TTFB
-- FP
-- FCP
-- DOMContentLoaded
-- Load
-
-### 其他值得分析的指标
-
-- DNS
-- TCP
-- 连接复用率：当 DNS 和 TCP 都为 0 的时候，可能是因为这一次请求直接复用了已经存在的 TCP 连接
+[指标设计](./performance.md)
 
 
 ## 页面性能相关性
@@ -34,3 +22,5 @@
 - [webPageTest](https://www.webpagetest.org/)
 - [webPageTest 中文文档](https://github.com/pwstrick/WebPagetest-Docs)
 - [web.dev](https://web.dev/)
+- [SpeedCurve](https://www.speedcurve.com/)
+- [Perfsee](https://perfsee.com/docs/cn/)
