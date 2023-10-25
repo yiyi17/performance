@@ -68,3 +68,10 @@ ps: load 往往很晚，和首屏没有直接关系
 ## API 相关
 - API 体积和 API 加载耗时：通过 `performance` 的 `xmlhttprequest`,看传输 `duration` 和 `transferSize`
   - API `700ms` 以内，API 体积尽量控制在 `230kb` 以下
+
+
+## 重定向耗时
+
+fetchStart - navigationStart（近似值）
+
+redirectEnd - redirectStart，同域限制

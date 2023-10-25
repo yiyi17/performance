@@ -10,6 +10,8 @@
 ## 页面性能相关性
 [页面性能相关性分析](./correlation.md)
 
+## 防劣化
+[性能模型与巡检设计](./deterioration-prevention.md)
 
 ## 常用工具
 - Chrome DevTools Performance 主要用于日常开发过程中分析运行时的性能表现。
