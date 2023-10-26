@@ -78,6 +78,10 @@ location / {
 - 尽快返回 HTML
 - 减少资源阻塞
 
+## 首屏资源大小与性能相关性
+
+TODO：
+
 ## longtask 优化方案
 
 - [longtask][https://web.dev/articles/optimize-long-tasks?utm_source=devtools&hl=zh-cn]
