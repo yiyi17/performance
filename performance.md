@@ -74,4 +74,23 @@ ps: load 往往很晚，和首屏没有直接关系
 
 fetchStart - navigationStart（近似值）
 
-redirectEnd - redirectStart，同域限制
+redirectEnd - redirectStart，同域限制，跨域的取不到
+
+## 字体对性能影响
+
+字体影响 CLS，字体是发现使用才去加载
+
+- 使用系统字体
+- 字体预加载，preload（ps：顺序一致）
+- 使用压缩字体
+- 剪切字体（font-spider）
+- font-display: optional
+
+### 字体类型
+- TTF/OTF 尽量减少使用，没有压缩，体积大
+- SVG，兼容不好
+- EOT，兼容不好，只有 IE 支持
+- WOFF/WOFF2，内置压缩，WOFF2 比 WOFF 压缩比更高
+
+## CDN 缓存命中率
+

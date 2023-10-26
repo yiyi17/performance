@@ -80,11 +80,16 @@ location / {
 
 ## longtask 优化方案
 
-[longtask][https://web.dev/articles/optimize-long-tasks?utm_source=devtools&hl=zh-cn]
-
-
+- [longtask][https://web.dev/articles/optimize-long-tasks?utm_source=devtools&hl=zh-cn]
 
 
 ## 使用 service worker
 [Workbox使用策略](https://www.cnblogs.com/yiyi17/p/12069528.html)
 
+## Hybrid 通信性能损耗
+- 减少通信次数
+- 减少通信大小
+
+## CDN
+
+## Polyfill.io
