@@ -23,7 +23,12 @@
 
 
 ## 长任务巡检
+[longtasks定义](https://developer.mozilla.org/zh-CN/docs/Web/API/PerformanceLongTaskTiming)
 - longtasks，长任务认为影响页面的体验，产生卡顿，考虑 webPageTest 私有化部署
+- 50ms 以上的任务
+
+### 构建火焰图
+
 
 
 ## 线上监控、巡检

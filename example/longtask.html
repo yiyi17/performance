@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  var observer = new PerformanceObserver(function (list) {
+  var perfEntries = list.getEntries();
+  for (var i = 0; i < perfEntries.length; i++) {
+    // Process long task notifications:
+    // report back for analytics and monitoring
+    // ...
+    console.log(perfEntries[i]);
+  }
+});
+// register observer for long task notifications
+observer.observe({ entryTypes: ["longtask"] });
+// Long script execution after this will result in queueing
+// and receiving "longtask" entries in the observer.
+
+
+</script>
+<body>
+  <script>
+    function a() {
+     return new Promise((resolve) => {
+      for(let i = 0; i < 1000000000; i++) {}
+      console.log('a');
+      resolve()
+     })
+      // b()
+    }
+    function b() {
+      return new Promise((resolve) => {
+      for(let i = 0; i < 1000000000; i++) {}
+      console.log('b');
+      resolve()
+     })
+      // c()
+    }
+    function c() {
+      return new Promise((resolve) => {
+      for(let i = 0; i < 1000000000; i++) {}
+      console.log('c');
+      resolve()
+     })
+    }
+
+    function yieldMain() {
+      return new Promise((resolve) => {
+        setTimeout(resolve, 0)
+      })
+    }
+    async function init() {
+      const task = [a, b, c]
+
+      while(task.length) {
+        const fn = task.shift()
+        fn()
+        await yieldMain()
+      }
+    }
+    init()
+  </script>
+ 
+</body>
+</html>
