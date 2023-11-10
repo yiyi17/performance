@@ -29,6 +29,7 @@ Core Web Vitals时就推荐使用`75分位数`来确保大多数用户的体验�
 - SSL
 - 连接复用率：当 DNS 和 TCP 都为 0 的时候，可能是因为这一次请求直接复用了已经存在的 TCP 连接
 - 秒开率：极致用户的占比
+- Long Tasks: 一般认为 50ms 认为是长任务，100ms 认为是卡顿
 
 ### 度量首屏
 - FP
@@ -51,7 +52,7 @@ ps: load 往往很晚，和首屏没有直接关系
 
 ### 度量流畅度
 - FPS
-- Long Tasks API
+- 卡顿
 
 ## Core Web Vitals
 
