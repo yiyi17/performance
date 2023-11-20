@@ -26,3 +26,8 @@
 - 按 1s、15s、30s、60s 的 CPU 统计
 
 - libuv 句柄，定时器统计
+
+
+### node 监控
+
+<img src="./node_monitor.awebp"/>
